@@ -1,0 +1,446 @@
+/* AI Prompt Studio — GitHub Pages Stylesheet */
+
+:root {
+    --bg: #000000;
+    --text: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent: #007AFF;
+    --accent-hover: #0062d1;
+    --card-bg: #1c1c1e;
+    --border: #2c2c2e;
+    --max-width: 800px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'SF Pro Text', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+}
+
+nav .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+nav .nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 80px 0 60px;
+}
+
+.hero .app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 27px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.hero .tagline {
+    font-size: 22px;
+    color: var(--text-secondary);
+    margin-bottom: 36px;
+}
+
+.app-store-badge {
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.app-store-badge:hover {
+    opacity: 0.8;
+}
+
+.app-store-badge img {
+    height: 54px;
+}
+
+/* Section */
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+/* Features Grid */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.feature-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+.feature-card:hover {
+    border-color: var(--accent);
+}
+
+.feature-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* How It Works */
+
+.how-it-works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.step {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    color: var(--text);
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.step h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.step p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Providers */
+
+.providers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.provider-tag {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 60px 0 80px;
+}
+
+.cta h2 {
+    margin-bottom: 16px;
+}
+
+.cta p {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    font-size: 17px;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 16px;
+}
+
+footer .footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+footer .footer-links a:hover {
+    color: var(--accent);
+}
+
+footer .copyright {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Links */
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* Page Header (Privacy, Support) */
+
+.page-header {
+    padding: 60px 0 32px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.page-header .subtitle {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+/* Content Sections (Privacy, Support) */
+
+.content-section {
+    margin-bottom: 36px;
+}
+
+.content-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 12px;
+    color: var(--accent);
+}
+
+.content-section p,
+.content-section li {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.content-section ul li {
+    padding: 4px 0 4px 20px;
+    position: relative;
+}
+
+.content-section ul li::before {
+    content: "\2022";
+    color: var(--accent);
+    position: absolute;
+    left: 4px;
+}
+
+.content-section a {
+    color: var(--accent);
+}
+
+/* FAQ */
+
+.faq-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.faq-item h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.faq-item p,
+.faq-item li {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.faq-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+}
+
+.faq-item ul li {
+    padding: 2px 0 2px 20px;
+    position: relative;
+}
+
+.faq-item ul li::before {
+    content: "\2022";
+    color: var(--accent);
+    position: absolute;
+    left: 4px;
+}
+
+/* Contact Card */
+
+.contact-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.contact-card .email-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* Back link */
+
+.back-link {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: var(--accent);
+}
+
+.back-link::before {
+    content: "\2190 ";
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero .tagline {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .how-it-works {
+        grid-template-columns: 1fr;
+    }
+
+    nav .nav-links a {
+        margin-left: 16px;
+        font-size: 14px;
+    }
+}
