@@ -90,9 +90,9 @@ nav .nav-links a:hover {
 }
 
 .hero-image {
-    width: 120px;
+    width: 160px;
     height: auto;
-    border-radius: 14px;
+    border-radius: 16px;
     margin-bottom: 24px;
     box-shadow: 0 4px 16px rgba(0, 122, 255, 0.15);
 }
